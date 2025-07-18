@@ -9,11 +9,15 @@ interface PlaceCardProps {
   distance: string;
   imageUrl: string;
   address: string;
+  onClick?: () => void;
 }
 
-export function PlaceCard({ name, rating, category, distance, imageUrl, address }: PlaceCardProps) {
+export function PlaceCard({ name, rating, category, distance, imageUrl, address, onClick }: PlaceCardProps) {
   return (
-    <Card className="overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+    <Card 
+      className="overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer" 
+      onClick={onClick}
+    >
       <div className="relative">
         <ImageWithFallback
           src={imageUrl}

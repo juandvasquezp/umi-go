@@ -7,35 +7,47 @@ const mockPeople = [
   {
     id: 1,
     name: "Sarah Johnson",
-    major: "Computer Science",
-    year: "Sophomore",
-    interests: ["Gaming", "Coding", "Coffee"],
+    major: "Ciencias de la Computación",
+    year: "Segundo Año",
+    interests: ["Gaming", "Programación", "Café"],
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b692?w=150&h=150&fit=crop&crop=face"
   },
   {
     id: 2,
     name: "Mike Chen",
-    major: "Business",
-    year: "Junior",
-    interests: ["Basketball", "Photography", "Travel"],
+    major: "Administración de Empresas",
+    year: "Tercer Año",
+    interests: ["Baloncesto", "Fotografía", "Viajes"],
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
   },
   {
     id: 3,
     name: "Emma Wilson",
-    major: "Art History",
-    year: "Freshman",
-    interests: ["Museums", "Reading", "Yoga"],
+    major: "Historia del Arte",
+    year: "Primer Año",
+    interests: ["Museos", "Lectura", "Yoga"],
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+  },
+  {
+    id: 4,
+    name: "Carlos Rodriguez",
+    major: "Ingeniería",
+    year: "Cuarto Año",
+    interests: ["Tecnología", "Ciclismo", "Música"],
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
   }
 ];
 
-export function PeoplePage() {
+interface PeoplePageProps {
+  onChatSelect: (userId: number) => void;
+}
+
+export function PeoplePage({ onChatSelect }: PeoplePageProps) {
   return (
     <div className="flex flex-col h-full p-4">
       <div className="space-y-2 mb-6">
-        <h2>Conectar con Estudiantes</h2>
-        <p className="text-muted-foreground">Conoce a otros estudiantes y haz nuevos amigos</p>
+        <h2>Conecta con Estudiantes</h2>
+        <p className="text-muted-foreground">Conoce compañeros estudiantes y haz nuevos amigos</p>
       </div>
       
       <div className="space-y-4">
@@ -76,9 +88,13 @@ export function PeoplePage() {
                   <div className="flex gap-2 mt-3">
                     <Button size="sm" variant="outline">
                       <UserPlus className="h-4 w-4 mr-1" />
-                      Solicitud
+                      Conectar
                     </Button>
-                    <Button size="sm" variant="outline">
+                    <Button 
+                      size="sm" 
+                      variant="outline"
+                      onClick={() => onChatSelect(person.id)}
+                    >
                       <MessageCircle className="h-4 w-4 mr-1" />
                       Mensaje
                     </Button>

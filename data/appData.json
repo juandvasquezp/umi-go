@@ -1,0 +1,204 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Biblioteca Central",
+      "rating": 4.5,
+      "category": "Espacio de Estudio",
+      "distance": "0.3 km",
+      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
+      "address": "Av. Universidad 123",
+      "description": "Una biblioteca moderna con amplios espacios de estudio, salas silenciosas y recursos digitales. Perfecta para estudiar individualmente o en grupo. Cuenta con WiFi gratuito y estaciones de carga.",
+      "features": ["WiFi Gratis", "Salas Silenciosas", "Recursos Digitales", "Estaciones de Carga"],
+      "hours": "Lunes a Viernes: 7:00 AM - 11:00 PM\nSábados: 9:00 AM - 9:00 PM\nDomingos: 10:00 AM - 8:00 PM",
+      "phone": "+1 234-567-8900",
+      "coordinates": { "lat": 40.7829, "lng": -73.9654 },
+      "comments": [
+        {
+          "id": 1,
+          "userId": 2,
+          "userName": "Mike Chen",
+          "userAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+          "rating": 5,
+          "comment": "Excelente lugar para estudiar. Muy silencioso y bien equipado.",
+          "date": "2024-01-15"
+        },
+        {
+          "id": 2,
+          "userId": 3,
+          "userName": "Emma Wilson",
+          "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+          "rating": 4,
+          "comment": "Me encanta venir aquí entre clases. Siempre encuentro mesa.",
+          "date": "2024-01-12"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Campus Coffee Co.",
+      "rating": 4.7,
+      "category": "Cafetería",
+      "distance": "0.1 km",
+      "imageUrl": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop",
+      "address": "Calle Universitaria 456",
+      "description": "La cafetería favorita de los estudiantes. Sirve café de especialidad, bebidas frías y snacks saludables. Ambiente acogedor perfecto para estudiar o socializar.",
+      "features": ["Café de Especialidad", "WiFi Gratis", "Snacks Saludables", "Ambiente Acogedor"],
+      "hours": "Lunes a Viernes: 6:30 AM - 10:00 PM\nSábados: 8:00 AM - 10:00 PM\nDomingos: 9:00 AM - 9:00 PM",
+      "phone": "+1 234-567-8901",
+      "coordinates": { "lat": 40.7831, "lng": -73.9652 },
+      "comments": [
+        {
+          "id": 3,
+          "userId": 1,
+          "userName": "Sarah Johnson",
+          "userAvatar": "https://images.unsplash.com/photo-1494790108755-2616b612b692?w=150&h=150&fit=crop&crop=face",
+          "rating": 5,
+          "comment": "¡El mejor café del campus! Los lattes son increíbles.",
+          "date": "2024-01-14"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Centro Recreativo Estudiantil",
+      "rating": 4.3,
+      "category": "Gimnasio",
+      "distance": "0.5 km",
+      "imageUrl": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      "address": "Campus Dr. 789",
+      "description": "Moderno centro de fitness con equipos de última generación, piscina olímpica, canchas deportivas y clases grupales. Membresía gratuita para estudiantes.",
+      "features": ["Equipos Modernos", "Piscina Olímpica", "Canchas Deportivas", "Clases Grupales"],
+      "hours": "Lunes a Viernes: 5:00 AM - 11:00 PM\nFines de Semana: 7:00 AM - 10:00 PM",
+      "phone": "+1 234-567-8902",
+      "coordinates": { "lat": 40.7825, "lng": -73.9658 },
+      "comments": [
+        {
+          "id": 4,
+          "userId": 2,
+          "userName": "Mike Chen",
+          "userAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+          "rating": 4,
+          "comment": "Excelentes instalaciones. La piscina es mi favorita.",
+          "date": "2024-01-10"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Pizza Palace",
+      "rating": 4.2,
+      "category": "Restaurante",
+      "distance": "0.8 km",
+      "imageUrl": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
+      "address": "Calle Principal 321",
+      "description": "Auténtica pizzería italiana con recetas familiares. Perfecta para cenas grupales de estudiantes. Ofrecen descuentos especiales para universitarios.",
+      "features": ["Recetas Auténticas", "Descuentos Estudiantiles", "Entrega a Domicilio", "Ambiente Familiar"],
+      "hours": "Lunes a Jueves: 11:00 AM - 11:00 PM\nViernes a Domingo: 11:00 AM - 12:00 AM",
+      "phone": "+1 234-567-8903",
+      "coordinates": { "lat": 40.7820, "lng": -73.9665 },
+      "comments": []
+    },
+    {
+      "id": 5,
+      "name": "La Librería",
+      "rating": 4.1,
+      "category": "Compras",
+      "distance": "0.4 km",
+      "imageUrl": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
+      "address": "Blvd. Universitario 654",
+      "description": "Librería independiente con una amplia selección de libros académicos, literatura y material de papelería. También cuenta con una pequeña sección de café.",
+      "features": ["Libros Académicos", "Literatura Variada", "Papelería", "Rincón de Café"],
+      "hours": "Lunes a Sábado: 9:00 AM - 8:00 PM\nDomingos: 11:00 AM - 6:00 PM",
+      "phone": "+1 234-567-8904",
+      "coordinates": { "lat": 40.7835, "lng": -73.9648 },
+      "comments": []
+    },
+    {
+      "id": 6,
+      "name": "Parque de la Ciudad",
+      "rating": 4.6,
+      "category": "Recreación",
+      "distance": "1.2 km",
+      "imageUrl": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
+      "address": "Av. del Parque 987",
+      "description": "Hermoso parque urbano con senderos para caminar, áreas de picnic y espacios verdes para relajarse. Perfecto para tomar un descanso del estrés académico.",
+      "features": ["Senderos para Caminar", "Áreas de Picnic", "Espacios Verdes", "Juegos Infantiles"],
+      "hours": "Todos los días: 6:00 AM - 8:00 PM",
+      "phone": "+1 234-567-8905",
+      "coordinates": { "lat": 40.7815, "lng": -73.9670 },
+      "comments": [
+        {
+          "id": 5,
+          "userId": 3,
+          "userName": "Emma Wilson",
+          "userAvatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+          "rating": 5,
+          "comment": "Mi lugar favorito para relajarme después de los exámenes.",
+          "date": "2024-01-08"
+        }
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": 1,
+      "name": "Sarah Johnson",
+      "major": "Ciencias de la Computación",
+      "year": "Segundo Año",
+      "interests": ["Gaming", "Programación", "Café"],
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b692?w=150&h=150&fit=crop&crop=face",
+      "bio": "Apasionada por la tecnología y siempre lista para ayudar con proyectos de programación. Me encanta el café y los videojuegos.",
+      "university": "Universidad de Tecnología",
+      "contact": "sarah.johnson@uni.edu"
+    },
+    {
+      "id": 2,
+      "name": "Mike Chen",
+      "major": "Administración de Empresas",
+      "year": "Tercer Año",
+      "interests": ["Baloncesto", "Fotografía", "Viajes"],
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      "bio": "Estudiante de negocios con pasión por el deporte y la fotografía. Siempre buscando nuevas aventuras y conocer gente nueva.",
+      "university": "Universidad de Tecnología",
+      "contact": "mike.chen@uni.edu"
+    },
+    {
+      "id": 3,
+      "name": "Emma Wilson",
+      "major": "Historia del Arte",
+      "year": "Primer Año",
+      "interests": ["Museos", "Lectura", "Yoga"],
+      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      "bio": "Nueva en la ciudad y emocionada por explorar la escena artística local. Me encanta leer y practicar yoga en mi tiempo libre.",
+      "university": "Universidad de Tecnología",
+      "contact": "emma.wilson@uni.edu"
+    },
+    {
+      "id": 4,
+      "name": "Carlos Rodriguez",
+      "major": "Ingeniería",
+      "year": "Cuarto Año",
+      "interests": ["Tecnología", "Ciclismo", "Música"],
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+      "bio": "Estudiante de ingeniería con experiencia en la ciudad. Me gusta ayudar a los nuevos estudiantes a adaptarse.",
+      "university": "Universidad de Tecnología",
+      "contact": "carlos.rodriguez@uni.edu"
+    }
+  ],
+  "currentUser": {
+    "id": 100,
+    "name": "Juan Pérez",
+    "major": "Ciencias de la Computación",
+    "year": "Primer Año",
+    "interests": ["Tecnología", "Gaming", "Café", "Grupos de Estudio", "Baloncesto", "Películas"],
+    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    "bio": "Nuevo estudiante emocionado por conocer gente y explorar la ciudad.",
+    "university": "Universidad de Tecnología",
+    "stats": {
+      "placesVisited": 12,
+      "connections": 8,
+      "averageRating": 4.7
+    }
+  }
+}
