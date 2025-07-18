@@ -3,29 +3,10 @@ import { ArrowLeft, Send, Phone, Video, MoreVertical } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import appData from '../../data/appData.json';
 
-const mockPeople = [
-  {
-    id: 1,
-    name: "Sarah Johnson",
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b692?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 2,
-    name: "Mike Chen",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 3,
-    name: "Emma Wilson",
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 4,
-    name: "Carlos Rodriguez",
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-  }
-];
+const mockPeople = appData.people;
+const currentUser = appData.currentUser;
 
 interface ChatPageProps {
   userId: number;
@@ -52,7 +33,7 @@ export function ChatPage({ userId, onBack }: ChatPageProps) {
     },
     {
       id: 2,
-      senderId: 100, // Current user ID
+      senderId: currentUser.id, // Current user ID
       text: "¡Hola! Sí, me encantaría. Soy nuevo aquí y no conozco muchos lugares todavía.",
       timestamp: "10:32 AM",
       isOwn: true
@@ -66,7 +47,7 @@ export function ChatPage({ userId, onBack }: ChatPageProps) {
     },
     {
       id: 4,
-      senderId: 100,
+      senderId: currentUser.id,
       text: "No, aún no he ido. ¿Podrías mostrarme dónde está?",
       timestamp: "10:35 AM",
       isOwn: true
@@ -94,7 +75,7 @@ export function ChatPage({ userId, onBack }: ChatPageProps) {
     if (newMessage.trim()) {
       const message: Message = {
         id: messages.length + 1,
-        senderId: 100, // Current user ID
+        senderId: currentUser.id, // Current user ID
         text: newMessage,
         timestamp: new Date().toLocaleTimeString('es-ES', { 
           hour: '2-digit', 

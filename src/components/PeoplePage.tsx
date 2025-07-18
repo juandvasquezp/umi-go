@@ -2,41 +2,9 @@ import { Users, UserPlus, MessageCircle } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Button } from "./ui/button";
+import appData from '../../data/appData.json';
 
-const mockPeople = [
-  {
-    id: 1,
-    name: "Sarah Johnson",
-    major: "Ciencias de la Computación",
-    year: "Segundo Año",
-    interests: ["Gaming", "Programación", "Café"],
-    avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b692?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 2,
-    name: "Mike Chen",
-    major: "Administración de Empresas",
-    year: "Tercer Año",
-    interests: ["Baloncesto", "Fotografía", "Viajes"],
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 3,
-    name: "Emma Wilson",
-    major: "Historia del Arte",
-    year: "Primer Año",
-    interests: ["Museos", "Lectura", "Yoga"],
-    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
-  },
-  {
-    id: 4,
-    name: "Carlos Rodriguez",
-    major: "Ingeniería",
-    year: "Cuarto Año",
-    interests: ["Tecnología", "Ciclismo", "Música"],
-    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
-  }
-];
+const people = appData.people;
 
 interface PeoplePageProps {
   onChatSelect: (userId: number) => void;
@@ -51,7 +19,7 @@ export function PeoplePage({ onChatSelect }: PeoplePageProps) {
       </div>
       
       <div className="space-y-4">
-        {mockPeople.map((person) => (
+        {people.map((person) => (
           <Card key={person.id}>
             <CardContent className="p-4">
               <div className="flex items-start gap-4">

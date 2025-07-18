@@ -1,9 +1,11 @@
 import { MapPin, Navigation } from "lucide-react";
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, AdvancedMarker, Pin } from "@vis.gl/react-google-maps";
+import appData from '../../data/appData.json';
 
 const API_KEY = "AIzaSyDDf9BTahYSle-rGzHYa4ZdowfGGueUDOg";
 
 export function MapPage() {
+  const places = appData.places;
   return (
     <div className="flex flex-col h-full p-4">
       <div className="space-y-2 mb-6">
@@ -18,23 +20,20 @@ export function MapPage() {
             <Map
             style={{ width: "100%", height: "100%" }}
             defaultCenter={{ lat: 4.6361342, lng: -74.0832243 }}
-            defaultZoom={16}
+            defaultZoom={15}
             gestureHandling={"greedy"}
             disableDefaultUI={true}
+            mapId={"c1b1a1b1b1b1b1b1"} // Reemplaza por tu mapId si tienes uno
             >
-            {Array.from({ length: 20 }).map((_, i) => {
-              // Randomize within ~0.001 lat/lng of center
-              const lat =
-              4.6361342 + (Math.random() - 0.5) * 0.002;
-              const lng =
-              -74.0832243 + (Math.random() - 0.5) * 0.002;
-              return (
-              <Marker
-                key={i}
-                position={{ lat, lng }}
-              />
-              );
-            })}
+            {places.map((place) => (
+              <AdvancedMarker
+                key={place.id}
+                position={place.coordinates}
+                title={place.name}
+              >
+                <Pin background="#ff9500" borderColor="#cc7500" glyphColor="#fff" />
+              </AdvancedMarker>
+            ))}
             </Map>
         </APIProvider>
       </div>

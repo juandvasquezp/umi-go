@@ -1,63 +1,9 @@
 import { PlaceCard } from "./PlaceCard";
 import { SearchBar } from "./SearchBar";
 import { useState } from "react";
+import appData from '../../data/appData.json';
 
-const mockPlaces = [
-  {
-    id: 1,
-    name: "Biblioteca Central",
-    rating: 4.5,
-    category: "Espacio de Estudio",
-    distance: "0.3 km",
-    imageUrl: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
-    address: "Av. Universidad 123"
-  },
-  {
-    id: 2,
-    name: "Campus Coffee Co.",
-    rating: 4.7,
-    category: "Cafetería",
-    distance: "0.1 km",
-    imageUrl: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&h=300&fit=crop",
-    address: "Calle Universitaria 456"
-  },
-  {
-    id: 3,
-    name: "Centro Recreativo Estudiantil",
-    rating: 4.3,
-    category: "Gimnasio",
-    distance: "0.5 km",
-    imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
-    address: "Campus Dr. 789"
-  },
-  {
-    id: 4,
-    name: "Pizza Palace",
-    rating: 4.2,
-    category: "Restaurante",
-    distance: "0.8 km",
-    imageUrl: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop",
-    address: "Calle Principal 321"
-  },
-  {
-    id: 5,
-    name: "La Librería",
-    rating: 4.1,
-    category: "Compras",
-    distance: "0.4 km",
-    imageUrl: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop",
-    address: "Blvd. Universitario 654"
-  },
-  {
-    id: 6,
-    name: "Parque de la Ciudad",
-    rating: 4.6,
-    category: "Recreación",
-    distance: "1.2 km",
-    imageUrl: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop",
-    address: "Av. del Parque 987"
-  }
-];
+const places = appData.places;
 
 interface PlacesPageProps {
   onPlaceSelect: (placeId: number) => void;
@@ -66,7 +12,7 @@ interface PlacesPageProps {
 export function PlacesPage({ onPlaceSelect }: PlacesPageProps) {
   const [searchTerm, setSearchTerm] = useState("");
   
-  const filteredPlaces = mockPlaces.filter(place =>
+  const filteredPlaces = places.filter(place =>
     place.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     place.category.toLowerCase().includes(searchTerm.toLowerCase())
   );

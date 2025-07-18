@@ -12,7 +12,7 @@
       "features": ["WiFi Gratis", "Salas Silenciosas", "Recursos Digitales", "Estaciones de Carga"],
       "hours": "Lunes a Viernes: 7:00 AM - 11:00 PM\nSábados: 9:00 AM - 9:00 PM\nDomingos: 10:00 AM - 8:00 PM",
       "phone": "+1 234-567-8900",
-      "coordinates": { "lat": 40.7829, "lng": -73.9654 },
+      "coordinates": { "lat": 4.6371342, "lng": -74.0812243 },
       "comments": [
         {
           "id": 1,
@@ -46,7 +46,7 @@
       "features": ["Café de Especialidad", "WiFi Gratis", "Snacks Saludables", "Ambiente Acogedor"],
       "hours": "Lunes a Viernes: 6:30 AM - 10:00 PM\nSábados: 8:00 AM - 10:00 PM\nDomingos: 9:00 AM - 9:00 PM",
       "phone": "+1 234-567-8901",
-      "coordinates": { "lat": 40.7831, "lng": -73.9652 },
+      "coordinates": { "lat": 4.6345342, "lng": -74.0859243 },
       "comments": [
         {
           "id": 3,
@@ -71,7 +71,7 @@
       "features": ["Equipos Modernos", "Piscina Olímpica", "Canchas Deportivas", "Clases Grupales"],
       "hours": "Lunes a Viernes: 5:00 AM - 11:00 PM\nFines de Semana: 7:00 AM - 10:00 PM",
       "phone": "+1 234-567-8902",
-      "coordinates": { "lat": 40.7825, "lng": -73.9658 },
+      "coordinates": { "lat": 4.6387342, "lng": -74.0876243 },
       "comments": [
         {
           "id": 4,
@@ -96,7 +96,7 @@
       "features": ["Recetas Auténticas", "Descuentos Estudiantiles", "Entrega a Domicilio", "Ambiente Familiar"],
       "hours": "Lunes a Jueves: 11:00 AM - 11:00 PM\nViernes a Domingo: 11:00 AM - 12:00 AM",
       "phone": "+1 234-567-8903",
-      "coordinates": { "lat": 40.7820, "lng": -73.9665 },
+      "coordinates": { "lat": 4.6333842, "lng": -74.0827743 },
       "comments": []
     },
     {
@@ -111,7 +111,7 @@
       "features": ["Libros Académicos", "Literatura Variada", "Papelería", "Rincón de Café"],
       "hours": "Lunes a Sábado: 9:00 AM - 8:00 PM\nDomingos: 11:00 AM - 6:00 PM",
       "phone": "+1 234-567-8904",
-      "coordinates": { "lat": 40.7835, "lng": -73.9648 },
+      "coordinates": { "lat": 4.6399842, "lng": -74.0888743 },
       "comments": []
     },
     {
@@ -126,7 +126,7 @@
       "features": ["Senderos para Caminar", "Áreas de Picnic", "Espacios Verdes", "Juegos Infantiles"],
       "hours": "Todos los días: 6:00 AM - 8:00 PM",
       "phone": "+1 234-567-8905",
-      "coordinates": { "lat": 40.7815, "lng": -73.9670 },
+      "coordinates": { "lat": 4.6326842, "lng": -74.0804743 },
       "comments": [
         {
           "id": 5,
