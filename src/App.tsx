@@ -62,7 +62,7 @@ export default function App() {
   const showBottomNav = !['place-detail', 'chat'].includes(activeTab);
 
   return (
-    <div className="flex flex-col h-screen bg-background max-w-md mx-auto border-x border-border">
+    <div className="flex flex-col h-screen bg-background">
       {/* Header - Only show on main pages */}
       {showBottomNav && (
         <header>
