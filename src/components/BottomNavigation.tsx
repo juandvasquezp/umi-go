@@ -8,7 +8,7 @@ interface BottomNavigationProps {
 const tabs = [
   { id: "places", label: "Lugares", icon: MapPin },
   { id: "map", label: "Mapa", icon: Map },
-  { id: "people", label: "Personas", icon: Users },
+  { id: "people", label: "Social", icon: Users },
   { id: "profile", label: "Perfil", icon: User },
 ];
 
