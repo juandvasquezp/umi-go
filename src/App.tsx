@@ -86,7 +86,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex flex-col h-screen bg-background max-w-md mx-auto border-x border-border">
+    <div className="flex flex-col h-screen bg-background max-w-md mx-auto">
       {/* Header - Only show on main pages */}
       {showBottomNav && (
         <header>
