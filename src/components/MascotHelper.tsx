@@ -51,7 +51,7 @@ export function MascotHelper() {
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-36 right-4 z-50 max-w-xs"
+            className="fixed bottom-40 right-4 z-50 max-w-xs"
           >
             <Card className="shadow-lg border-primary/20">
               <CardContent className="p-4">
