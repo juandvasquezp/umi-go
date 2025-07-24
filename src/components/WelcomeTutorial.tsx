@@ -24,7 +24,7 @@ interface TutorialStep {
 const tutorialSteps: TutorialStep[] = [
   {
     id: 'welcome',
-    title: '¡Bienvenido a Campus Connect!',
+    title: '¡Bienvenido a Umi★Go!',
     description: 'Hola, soy Umi, tu guía universitario. Te ayudaré a descubrir todo lo que Umi★Go puede hacer por ti como estudiante.',
     mascotExpression: 'waving',
     icon: <Mascot expression="saludando" size="sm" />,

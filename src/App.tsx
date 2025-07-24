@@ -79,7 +79,7 @@ export default function App() {
       <div className="flex items-center justify-center h-screen bg-background">
         <div className="text-center">
           <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-muted-foreground">Cargando Campus Connect...</p>
+          <p className="text-muted-foreground">Cargando Umi★Go...</p>
         </div>
       </div>
     );
@@ -91,7 +91,7 @@ export default function App() {
       {showBottomNav && (
         <header>
           <div className="flex items-center justify-center p-4 bg-white border-b border-border">
-            <img src={UmiGoWatermark} alt="Campus Connect" className="h-17" />
+            <img src={UmiGoWatermark} alt="Umigo" className="h-17" />
           </div>
         </header>
       )}
